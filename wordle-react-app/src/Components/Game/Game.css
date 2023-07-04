@@ -1,0 +1,80 @@
+.main-game-container {
+	width: 900px;
+	height: 700px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	cursor: default;
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none;
+	font-family: "Kanit", sans-serif;
+	color: white;
+	font-size: 20pt;
+	font-weight: 900;
+}
+
+.end-game-container-text {
+	position: relative;
+	margin-bottom: 25px;
+	justify-content: center;
+	text-align: center;
+}
+
+.end-game-container {
+	width: 600px;
+	height: 150px;
+}
+
+@keyframes fade-in {
+	0% {
+		translate: 0 25px;
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.rows {
+	margin-bottom: 50px;
+}
+
+.button-container {
+	width: 170px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 65px;
+}
+
+.playAgainButton {
+	animation: fade-in 1s;
+	padding: 15px;
+	border-radius: 15px;
+
+	border: none;
+	cursor: pointer;
+	font-family: "Kanit", sans-serif;
+	color: rgb(18, 18, 19);
+	font-size: 16pt;
+	font-weight: 900;
+}
+
+.playAgainButton:hover {
+	transition: 0.2s;
+	background: rgb(69, 131, 69);
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

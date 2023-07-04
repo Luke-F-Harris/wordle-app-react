@@ -1,0 +1,45 @@
+.main-tile-container {
+	border: 2px white solid;
+	width: 46px;
+	height: 46px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 5px;
+	border-radius: 5px;
+}
+
+.submitted {
+	border-color: rgb(160, 159, 159);
+}
+
+.exact {
+	background: rgb(1, 109, 1);
+}
+
+.contains {
+	background: rgb(185, 120, 0);
+}
+
+.notin {
+	background: rgb(120, 120, 120);
+}
+
+.animated-element {
+	animation-name: scale-animation;
+	animation-duration: 0.3s;
+}
+
+/* Define the animation keyframes */
+@keyframes scale-animation {
+	0% {
+		/* Define the starting state of the animation */
+		/* You can customize this to match your requirements */
+		transform: scale(1.2);
+	}
+	100% {
+		/* Define the ending state of the animation */
+		/* You can customize this to match your requirements */
+		transform: scale(1);
+	}
+}
